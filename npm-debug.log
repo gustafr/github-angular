@@ -1,0 +1,185 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'karma-cli' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /Users/bomattsson/.npm-packages/lib/package.json
+5 verbose readDependencies loading dependencies from /Users/bomattsson/.npm-packages/lib/package.json
+6 silly cache add args [ 'karma-cli', null ]
+7 verbose cache add spec karma-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'karma-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'karma-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed karma-cli@*
+10 verbose addNamed "*" is a valid semver range for karma-cli
+11 silly addNameRange { name: 'karma-cli', range: '*', hasData: false }
+12 silly mapToRegistry name karma-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/karma-cli
+16 verbose addNameRange registry:https://registry.npmjs.org/karma-cli not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/karma-cli
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:10:31 PM
+20 verbose request id 552c70fea7e56b70
+21 verbose etag "C2H6UCYFAHOAA1M5P72B7L2ED"
+22 http request GET https://registry.npmjs.org/karma-cli
+23 http 304 https://registry.npmjs.org/karma-cli
+24 verbose headers { date: 'Tue, 03 Nov 2015 15:10:32 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=60',
+24 verbose headers   etag: '"C2H6UCYFAHOAA1M5P72B7L2ED"',
+24 verbose headers   age: '14',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-fra1246-FRA',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1446563432.056738,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Tue, 03 Nov 2015 15:10:32 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     etag: '"C2H6UCYFAHOAA1M5P72B7L2ED"',
+25 silly get     age: '14',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-fra1246-FRA',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1446563432.056738,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose etag https://registry.npmjs.org/karma-cli from cache
+27 verbose get saving karma-cli to /Users/bomattsson/.npm/registry.npmjs.org/karma-cli/.cache.json
+28 silly addNameRange number 2 { name: 'karma-cli', range: '*', hasData: true }
+29 silly addNameRange versions [ 'karma-cli',
+29 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0', '0.1.1' ] ]
+30 silly addNamed karma-cli@0.1.1
+31 verbose addNamed "0.1.1" is a plain semver version for karma-cli
+32 silly cache afterAdd karma-cli@0.1.1
+33 verbose afterAdd /Users/bomattsson/.npm/karma-cli/0.1.1/package/package.json not in flight; writing
+34 verbose afterAdd /Users/bomattsson/.npm/karma-cli/0.1.1/package/package.json written
+35 silly install resolved [ { name: 'karma-cli',
+35 silly install resolved     description: 'The Karma command line interface.',
+35 silly install resolved     homepage: 'http://karma-runner.github.io/',
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git://github.com/karma-runner/karma-cli.git' },
+35 silly install resolved     bugs: { url: 'https://github.com/karma-runner/karma-cli/issues' },
+35 silly install resolved     keywords:
+35 silly install resolved      [ 'karma',
+35 silly install resolved        'spectacular',
+35 silly install resolved        'runner',
+35 silly install resolved        'karma',
+35 silly install resolved        'js',
+35 silly install resolved        'javascript',
+35 silly install resolved        'testing',
+35 silly install resolved        'test',
+35 silly install resolved        'remote',
+35 silly install resolved        'execution' ],
+35 silly install resolved     author: { name: 'Vojta Jína', email: 'vojta.jina@gmail.com' },
+35 silly install resolved     contributors:
+35 silly install resolved      [ [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object] ],
+35 silly install resolved     dependencies: { resolve: '^1.1.6' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { 'eslint-config-standard': '^4.4.0',
+35 silly install resolved        'eslint-plugin-standard': '^1.3.1',
+35 silly install resolved        grunt: '^0.4.1',
+35 silly install resolved        'grunt-bump': '^0.3.1',
+35 silly install resolved        'grunt-conventional-changelog': '^1.2.2',
+35 silly install resolved        'grunt-eslint': '^17.0.0',
+35 silly install resolved        'grunt-npm': '0.0.2',
+35 silly install resolved        'load-grunt-tasks': '^3.2.0' },
+35 silly install resolved     preferGlobal: true,
+35 silly install resolved     bin: { karma: './bin/karma' },
+35 silly install resolved     engines: { node: '0.10 || 0.12 || 4' },
+35 silly install resolved     version: '0.1.1',
+35 silly install resolved     license: 'MIT',
+35 silly install resolved     gitHead: '8c6e3e5c335b52cd3e97d66e12b2137f7134c1a5',
+35 silly install resolved     _id: 'karma-cli@0.1.1',
+35 silly install resolved     scripts: {},
+35 silly install resolved     _shasum: 'd097c6e50a825007a63d0ade7cd18e1645afc294',
+35 silly install resolved     _from: 'karma-cli@*',
+35 silly install resolved     _npmVersion: '3.3.4',
+35 silly install resolved     _nodeVersion: '4.0.0',
+35 silly install resolved     _npmUser: { name: 'dignifiedquire', email: 'dignifiedquire@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'd097c6e50a825007a63d0ade7cd18e1645afc294',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/karma-cli/-/karma-cli-0.1.1.tgz' },
+35 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/karma-cli/-/karma-cli-0.1.1.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install karma-cli@0.1.1 into /Users/bomattsson/.npm-packages/lib
+37 info installOne karma-cli@0.1.1
+38 verbose installOne of karma-cli to /Users/bomattsson/.npm-packages/lib not in flight; installing
+39 verbose lock using /Users/bomattsson/.npm/_locks/karma-cli-561068a729d17a18.lock for /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+40 silly install write writing karma-cli 0.1.1 to /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+41 verbose unbuild lib/node_modules/karma-cli
+42 info preuninstall karma-cli@0.1.1
+43 info uninstall karma-cli@0.1.1
+44 verbose unbuild rmStuff karma-cli@0.1.1 from /Users/bomattsson/.npm-packages/lib/node_modules
+45 silly gentlyRm /Users/bomattsson/.npm-packages/bin/karma is being gently removed
+46 silly gentlyRm verifying /Users/bomattsson/.npm-packages is an npm working directory
+47 silly gentlyRm containing path /Users/bomattsson/.npm-packages is under npm's control, in /Users/bomattsson/.npm-packages
+48 silly gentlyRm deletion target /Users/bomattsson/.npm-packages/bin/karma is under /Users/bomattsson/.npm-packages
+49 verbose gentlyRm vacuuming from /Users/bomattsson/.npm-packages/bin/karma up to /Users/bomattsson/.npm-packages
+50 silly vacuum-fs removing /Users/bomattsson/.npm-packages/bin/karma
+51 silly vacuum-fs quitting because other entries in /Users/bomattsson/.npm-packages/bin
+52 info postuninstall karma-cli@0.1.1
+53 silly gentlyRm /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli is being purged from base /Users/bomattsson/.npm-packages
+54 verbose gentlyRm don't care about contents; nuking /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+55 silly vacuum-fs purging /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+56 verbose unlock done using /Users/bomattsson/.npm/_locks/karma-cli-561068a729d17a18.lock for /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+57 verbose stack Error: EACCES: permission denied, unlink '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md'
+57 verbose stack     at Error (native)
+58 verbose cwd /Users/bomattsson/code/makers/github-angular
+59 error Darwin 14.5.0
+60 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "karma-cli"
+61 error node v4.2.1
+62 error npm  v2.14.7
+63 error path /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md
+64 error code EACCES
+65 error errno -13
+66 error syscall unlink
+67 error Error: EACCES: permission denied, unlink '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md'
+67 error     at Error (native)
+67 error  { [Error: EACCES: permission denied, unlink '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md']
+67 error   errno: -13,
+67 error   code: 'EACCES',
+67 error   syscall: 'unlink',
+67 error   path: '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md' }
+68 error Please try running this command again as root/Administrator.
+69 verbose exit [ -13, true ]
+70 verbose unbuild lib/node_modules/karma-cli
+71 info preuninstall karma-cli@0.1.1
+72 info uninstall karma-cli@0.1.1
+73 verbose unbuild rmStuff karma-cli@0.1.1 from /Users/bomattsson/.npm-packages/lib/node_modules
+74 silly gentlyRm /Users/bomattsson/.npm-packages/bin/karma is being gently removed
+75 silly gentlyRm verifying /Users/bomattsson/.npm-packages is an npm working directory
+76 silly gentlyRm containing path /Users/bomattsson/.npm-packages is under npm's control, in /Users/bomattsson/.npm-packages
+77 silly gentlyRm deletion target /Users/bomattsson/.npm-packages/bin/karma is under /Users/bomattsson/.npm-packages
+78 verbose gentlyRm vacuuming from /Users/bomattsson/.npm-packages/bin/karma up to /Users/bomattsson/.npm-packages
+79 info postuninstall karma-cli@0.1.1
+80 silly gentlyRm /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli is being purged from base /Users/bomattsson/.npm-packages
+81 verbose gentlyRm don't care about contents; nuking /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+82 silly vacuum-fs purging /Users/bomattsson/.npm-packages/lib/node_modules/karma-cli
+83 error error rolling back Error: EACCES: permission denied, unlink '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md'
+83 error error rolling back     at Error (native)
+83 error error rolling back  { [Error: EACCES: permission denied, unlink '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md']
+83 error error rolling back   errno: -13,
+83 error error rolling back   code: 'EACCES',
+83 error error rolling back   syscall: 'unlink',
+83 error error rolling back   path: '/Users/bomattsson/.npm-packages/lib/node_modules/karma-cli/CHANGELOG.md' }

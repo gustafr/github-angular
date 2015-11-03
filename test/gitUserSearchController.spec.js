@@ -36,6 +36,10 @@ beforeEach(module('GitUserSearch'));
   ];
 
   it('displays search results', function() {
-    expect(ctrl.searchResult.items).toEqual(items);
-  });
+  ctrl.searchTerm = 'hello';
+  ctrl.doSearch();
+  expect(ctrl.searchResult.items).toEqual(items);
+});
+
+
 });
