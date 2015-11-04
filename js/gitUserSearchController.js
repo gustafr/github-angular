@@ -1,6 +1,6 @@
 githubUserSearch.controller('GitUserSearchController', ['$resource', function($resource) {
  
-        var searchResource = $resource('https://api.github.coom/search/users');
+        var searchResource = $resource('https://api.github.com/search/users');
 
         var self = this;
 
