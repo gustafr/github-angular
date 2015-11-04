@@ -40,29 +40,28 @@ describe('GitUserSearchController', function() {
                 .expectGET("https://api.github.com/search/users?q=hello")
                 .respond({
                     items: items
-                });
+               });
+        
+
+            it('returns search results', function() {
+             search.query('hello')
+                  .then(function(response) {
+                   expect(response.data).toEqual(items)
+                  })
+                httpBackend.flush();
+            });
+
+            it('displays search results', function() {
+             ctrl.searchTerm = 'hello';
+             ctrl.doSearch();
+             httpBackend.flush();
+             expect(ctrl.searchResult.items).toEqual(items);
+            });
+
+            afterEach(function() {
+                httpBackend.verifyNoOutstandingExpectation();
+                httpBackend.verifyNoOutstandingRequest();
+            });
         }));
-
-        it('returns search results', function() {
-            search.query('hello')
-                .then(function(response) {
-                    expect(response.data).toEqual(items)
-                })
-            httpBackend.flush();
-        })
-
-        it('displays search results', function() {
-            ctrl.searchTerm = 'hello';
-            ctrl.doSearch();
-            httpBackend.flush();
-            expect(ctrl.searchResult.items).toEqual(items);
-        });
-
-        afterEach(function() {
-            httpBackend.verifyNoOutstandingExpectation();
-            httpBackend.verifyNoOutstandingRequest();
-        });
-
     });
-
 });
