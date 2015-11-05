@@ -19,11 +19,11 @@ describe('GitHub profile finder', function() {
 
     it('finds profiles', function() {
 
-  searchBox.sendKeys('spike');
-  searchButton.click();
+        searchBox.sendKeys('spike');
+        searchButton.click();
 
-  var profiles = element.all(by.repeater('user in searchCtrl.searchResult.items'));
-  expect(profiles.get(0).getText()).toEqual('spike'); //This won't pass!
-});
-
+        var profiles = element.all(by.repeater('user in searchCtrl.searchResult.items'));
+        expect(profiles.get(0).getText()).toEqual('spike');
+        expect(profiles.last().getText()).toEqual('spikelynch');
+    });
 });
